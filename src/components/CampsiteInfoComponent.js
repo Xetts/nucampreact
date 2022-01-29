@@ -7,7 +7,6 @@ import {
   BreadcrumbItem,
 } from "reactstrap";
 import { Link } from "react-router-dom";
-import React, { Component } from "react";
 
 function RenderComments({ comments }) {
   if (comments) {
