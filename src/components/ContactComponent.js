@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-pascal-case */
+/* eslint-disable react/jsx-no-comment-textnodes */
 import React, { Component } from "react";
 import {
   Breadcrumb,
@@ -241,6 +243,7 @@ class Contact extends Component {
                   Your Feedback
                 </Label>
                 <Col md={10}>
+                  // eslint-disable-next-line react/jsx-pascal-case
                   <Control.textarea
                     model=".feedback"
                     id="feedback"
