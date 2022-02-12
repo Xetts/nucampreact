@@ -33,6 +33,12 @@ export const addCampsites = (campsites) => ({
   payload: campsites,
 });
 
+export const fetchComments = () => (dispatch) => {
+  return fetch(baseUrl + "comments")
+    .then((response) => response.json())
+    .then((comments) => dispatch(addComments(comments)));
+};
+
 export const commentsFailed = (errMess) => ({
   type: ActionTypes.COMMENTS_FAILED,
   payload: errMess,
